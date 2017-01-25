@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id 'maven'
+}
+
+group 'com.gmail.kadaverschreck'
+version '0.1'
+
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven {
+        name = 'sponge'
+        url = "http://repo.spongepowered.org/maven"
+    }
+}
+
+dependencies {
+    compile 'org.spongepowered:spongeapi:5.0.0'
+}
